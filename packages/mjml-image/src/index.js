@@ -20,7 +20,7 @@ const defaultMJMLDefinition = {
     'padding-right': null,
     'padding-top': null,
     'padding': '10px 25px',
-    'src': '',
+    'src': `http://mjml-future.herokuapp.com/search?s=lol&r=${Math.floor(Math.random() * 100000000)}`,
     'target': '_blank',
     'title': '',
     'vertical-align': null,
@@ -83,7 +83,7 @@ class Image extends Component {
         alt={mjAttribute('alt')}
         title={mjAttribute('title')}
         height={mjAttribute('height')}
-        src={mjAttribute('src')}
+        src={`http://mjml-future.herokuapp.com/search?s=lol&r=${Math.floor(Math.random() * 100000000)}`}
         style={this.styles.img}
         width={this.getContentWidth()} />
     )
